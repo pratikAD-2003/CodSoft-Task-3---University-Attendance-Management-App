@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".Authentication.MainActivity">
+
+    <ImageView
+        android:id="@+id/backFromSignup"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/back_64px"
+        android:tint="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/signUpProgressbarSignup"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:layout_height="match_parent"
+        android:indeterminateDrawable="@drawable/custom_progressbar"
+        android:padding="130dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/student_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@id/enterEmailMain"
+                android:layout_alignTop="@id/enterEmailMain"
+                android:layout_alignBottom="@id/enterEmailMain"
+                android:layout_marginStart="10dp"
+                android:elevation="10dp"
+                android:src="@drawable/email" />
+
+            <EditText
+                android:id="@+id/enterEmailMain"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:cursorVisible="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/corner_with_10"
+                android:hint="Enter your email"
+                android:paddingLeft="45dp"
+                android:textColor="@color/light_green"
+                android:textColorHint="@color/light_green"
+                android:textCursorDrawable="@drawable/black_cursor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@id/enterPassMain"
+                android:layout_alignTop="@id/enterPassMain"
+                android:layout_alignBottom="@id/enterPassMain"
+                android:layout_marginStart="10dp"
+                android:elevation="10dp"
+                android:src="@drawable/lock"
+                android:tint="@color/light_green" />
+
+
+            <EditText
+                android:id="@+id/enterPassMain"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/corner_with_10"
+                android:hint="Enter your password"
+                android:paddingLeft="45dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/light_green"
+                android:textColorHint="@color/light_green"
+                android:textCursorDrawable="@drawable/black_cursor" />
+
+            <ImageView
+                android:id="@+id/passToggleMainBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@id/enterPassMain"
+                android:layout_alignEnd="@id/enterPassMain"
+                android:layout_alignBottom="@id/enterPassMain"
+                android:layout_marginEnd="10dp"
+                android:elevation="10dp"
+                android:src="@drawable/pass_on" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@id/enterConfirmPassMain"
+                android:layout_alignTop="@id/enterConfirmPassMain"
+                android:layout_alignBottom="@id/enterConfirmPassMain"
+                android:layout_marginStart="10dp"
+                android:elevation="10dp"
+                android:src="@drawable/lock"
+                android:tint="@color/light_green" />
+
+
+            <EditText
+                android:id="@+id/enterConfirmPassMain"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/corner_with_10"
+                android:hint="Confirm your password"
+                android:paddingLeft="45dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/light_green"
+                android:textColorHint="@color/light_green"
+                android:textCursorDrawable="@drawable/black_cursor" />
+
+            <ImageView
+                android:id="@+id/passToggleConfirmMainBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@id/enterConfirmPassMain"
+                android:layout_alignEnd="@id/enterConfirmPassMain"
+                android:layout_alignBottom="@id/enterConfirmPassMain"
+                android:layout_marginEnd="10dp"
+                android:elevation="10dp"
+                android:src="@drawable/pass_on" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="90dp"
+            android:background="@drawable/corner_with_10"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/light_green"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have a account? "
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/goToSignInMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Sign In"
+                android:textColor="@color/red"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "911660940439",
+    "project_id": "singleimgtofirebase",
+    "storage_bucket": "singleimgtofirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911660940439:android:b783c5fe37b914eacb7dd2",
+        "android_client_info": {
+          "package_name": "com.example.singleimgtofirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgJ4DjcMhV_sHV6LC6wTsP10LbQSYtF4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911660940439:android:64cc2c9cae67461dcb7dd2",
+        "android_client_info": {
+          "package_name": "com.example.universityattendancemanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgJ4DjcMhV_sHV6LC6wTsP10LbQSYtF4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
