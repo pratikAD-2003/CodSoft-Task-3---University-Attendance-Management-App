@@ -1,6 +1,6 @@
-![UAM 1](https://github.com/user-attachments/assets/1572fc78-6e13-4845-b921-19396e88f7c6)
+![UAM_1](https://github.com/user-attachments/assets/aa39f0f8-f5cd-4a91-b8df-cf99d9bca205)
 
-![UAM 2](https://github.com/user-attachments/assets/9e3d6335-a299-429a-9876-62ce0a64ab17)
+![UAM_2](https://github.com/user-attachments/assets/7ac3d7f8-1771-41d1-a13f-dcb084f8afe7)
 
 // ------------------------------------------------------> FLOW CHART <---------------------------------------------------------------
 * Faculty User Flow 
